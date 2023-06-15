@@ -18,6 +18,6 @@ Instructions:
 3. Modify the script to include your preferred server locations, if needed.
 4. Place the last_server.txt file in the same directory as the script.
 5. Make the script executable using the chmod +x vpn_rotation.sh command.
-6. Set up a cron job using crontab -e and add the appropriate entry to execute the script at your desired interval.
+6. Set up a cron job using crontab -e and add the appropriate entry to execute the script at your desired interval (be sure to use the bash command before the specified path of the script in the crontab file).
 7. Save the changes to the cron table and exit the text editor.
 8. Enjoy automated rotation of your NordVPN connection for enhanced anonimity and security, with each connection being different from the last one.
