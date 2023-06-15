@@ -4,7 +4,7 @@
 servers=("United_States dallas" "United_States miami" "United_States chicago" "United_Kingdom london" "Canada montreal")
 
 # Read the last connected server from a file
-last_server=$(cat /home/dread63/Documents/last_server.txt)
+last_server=$(cat /path/to/last_server.txt)
 
 # Remove the last connected server from the array
 servers=("${servers[@]/$last_server}")
@@ -16,4 +16,4 @@ server=${servers[$RANDOM % ${#servers[@]}]}
 nordvpn connect $server
 
 # Save the selected server as last connected server
-echo "$server" > /home/dread63/Documents/last_server.txt
+echo "$server" > /path/to/last_server.txt
